@@ -20,5 +20,4 @@
   #app {
     padding-bottom: 10rem;
   }
-
 </style>

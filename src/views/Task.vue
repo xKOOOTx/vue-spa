@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div v-if="task" class="col s6 offset-s3">
+    <div v-if="task" class="col s9 offset-m1 offset-l1 offset-s1">
       <h1>{{ task.title }}</h1>
       <p class="authorName">Author name: {{ task.authorName }}</p>
       <form @submit.prevent="submitHandler">

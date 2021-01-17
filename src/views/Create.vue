@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col s6 offset-s3">
+    <div class="col s9 offset-m1 offset-l1 offset-s1">
       <h1>Create task</h1>
 
       <form @submit.prevent="submitHandler">

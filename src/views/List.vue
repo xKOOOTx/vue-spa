@@ -2,7 +2,7 @@
   <div>
     <h1>List</h1>
     <div class="row">
-      <div class="col s3 filter">
+      <div class="col s6 filter">
         <div class="input-field col">
           <select ref="select" v-model="filter">
             <option value="" disabled selected>Choose your option</option>
@@ -14,7 +14,7 @@
         </div>
         <button v-if="filter" class="btn btn-small red" @click="filter = null">Clear filter</button>
       </div>
-      <div class="col s3 filter">
+      <div class="col s6 filter">
         <div class="input-field col">
           <select ref="nameSelect" v-model="nameFilter">
             <option value="" disabled selected>Choose your option</option>
