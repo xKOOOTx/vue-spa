@@ -54,12 +54,12 @@
           </td>
           <td>{{ task.status }}</td>
           <td>
-            <router-link tag="button" class="btn btn-small" :to="'/task/' + task.id">
+            <router-link tag="button" class="waves-effect waves-light btn btn-small" :to="'/task/' + task.id">
               Open
             </router-link>
           </td>
           <td>
-            <button class="btn btn-small rounded red" type="button" @click="deleteTask">x</button>
+            <button class="waves-effect waves-light btn-floating btn-small rounded red" type="button" @click="deleteTask">x</button>
           </td>
         </tr>
       </tbody>
@@ -104,6 +104,7 @@ export default {
   mounted() {
     M.FormSelect.init(this.$refs.select)
     M.FormSelect.init(this.$refs.nameSelect)
+    M.Sidenav.init(this.$refs.sidenav);
   }
 }
 </script>
@@ -112,7 +113,7 @@ export default {
   .td {
     max-width: 400px;
   }
-  .text {
+  .text, .select {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;

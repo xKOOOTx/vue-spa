@@ -13,10 +13,14 @@
         <input type="text" ref="datepicker">
         <div style="display: flex;">
           <div v-if="task.status !== 'completed'"  style="margin-right: 1rem">
-            <button class="btn" type="submit" style="margin-right: 1rem">Update task</button>
-            <button class="btn blue" type="button" @click="completeTask">Complete task</button>
+            <button class="btn waves-effect waves-light" type="submit" style="margin-right: 1rem">Update task</button>
+            <button class="btn waves-effect waves-light blue" type="button" @click="completeTask">Complete task</button>
           </div>
-          <button class="btn" type="button" @click="deleteTask">Delete task</button>
+          <div v-if="task.status == 'completed'" style="margin-right: 1rem">
+            <button class="btn disabled" type="submit" style="margin-right: 1rem">Update task</button>
+            <button class="btn blue disabled" type="button" @click="completeTask">Task completed</button>
+          </div>
+          <button class="btn waves-effect waves-light red" type="button" @click="deleteTask">Delete task</button>
         </div>
       </form>
     </div>
